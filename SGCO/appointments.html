@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - SGCO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo SGCO">
+            <h1>SGCO</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de Nosotros</a></li>
+                <li><a href="appointments.html">Agendar Cita</a></li>
+                <li><a href="schedules.html">Horarios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="appointment-form">
+            <h2>Agendar Cita</h2>
+            <form action="appointment-confirmation.html" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+
+                <label for="gmail">Correo Electrónico:</label>
+                <input type="email" id="gmail" name="gmail" required>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="sintomas">Síntomas:</label>
+                <textarea id="sintomas" name="sintomas" required></textarea>
+
+                <label for="recibo">Adjuntar Recibo (si aplica):</label>
+                <input type="file" id="recibo" name="recibo">
+
+                <label for="fecha">Fecha de la Cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de la Cita:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <button type="submit">Agendar Cita</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SGCO. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
